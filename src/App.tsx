@@ -1,20 +1,31 @@
-import React from 'react';
-import './App.css';
-import { NewComponent } from './NewComponent';
-
-const student = [
-  {id: 1, name: 'Alex', age: 36},
-  {id: 2, name: 'Borya', age: 18},
-  {id: 3, name: 'Hydra', age: 188},
-]
+import React from 'react'
+import './App.css'
+import styled from 'styled-components'
+import { Header } from './components/Header'
+import { Navbar } from './components/Nav'
+import { Profile } from './components/Profile'
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      >Tech
-    </div>
-  );
+	return (
+		<AppWrapper>
+			<Header />
+			<Navbar />
+			<Profile />
+		</AppWrapper>
+	)
 }
 
-export default App;
+const AppWrapper = styled.div`
+	display: grid;
+	width: 1200px;
+	margin: 0 auto;
+
+	grid-template-areas: 'h h' 'n c';
+
+	grid-template-rows: 60px 1fr;
+	grid-template-columns: 2fr 10fr;
+	grid-gap: 10px;
+`
+
+
+export default App
