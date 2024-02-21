@@ -15,7 +15,7 @@ export function Header () {
 export const HeaderStyled = styled.header`
 	grid-area: h;
 
-	background-color: green;
+	background-color: #363639;
 
 	& img {
 		width: 20px;

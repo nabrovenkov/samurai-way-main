@@ -15,6 +15,10 @@ const ProfileStyled = styled.div`
 	grid-area: c;
 
 	background-color: brown;
+
+	& img {
+		width: 199px;
+	}
 `
 const AvaDescription = styled.div``
 const MyPosts = styled.div``

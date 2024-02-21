@@ -15,7 +15,7 @@ export function Navbar () {
 const NavbarStyled = styled.nav`
 	grid-area: n;
 
-	background-color: blue;
+	background-color: #8e8e90;
 `
 const LinkNav = styled.a`
 	display: block;
