@@ -1,23 +1,12 @@
-import styled from 'styled-components'
+import s from './style/Header.module.css'
 
 export function Header () {
 	return (
-		<HeaderStyled>
+		<header className={s.header}>
 			<img
 				src='https://yt3.googleusercontent.com/t5SJiLmCtVMVG6FHbt4UhELPTnUTXA7oLpcfhzLqAk3OdcW_WqSZwLyCjHoxlfpALitEvaob2Q=s900-c-k-c0x00ffffff-no-rj'
 				alt='logo'
 			/>
-		</HeaderStyled>
+		</header>
 	)
 }
-
-
-export const HeaderStyled = styled.header`
-	grid-area: h;
-
-	background-color: #363639;
-
-	& img {
-		width: 20px;
-	}
-`

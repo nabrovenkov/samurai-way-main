@@ -1,22 +1,24 @@
-import styled from 'styled-components'
+import s from './style/Navbar.module.css'
 
 export function Navbar () {
 	return (
-		<NavbarStyled>
-			<LinkNav>Profile</LinkNav>
-			<LinkNav>Messages</LinkNav>
-			<LinkNav>News</LinkNav>
-			<LinkNav>Music</LinkNav>
-			<LinkNav>Settings</LinkNav>
-		</NavbarStyled>	
+		<nav className={s.nav}>
+			<div className={s.item}>
+				<a>Profile</a>
+			</div>
+			<div className={s.item}> 
+				<a>Messages</a>
+			</div>
+			<div className={s.item}>
+				<a>News</a>
+			</div>
+			<div className={s.item}>
+				<a>Music</a>
+			</div>
+			<div className={s.item}>
+				<a>Settings</a>
+			</div>
+		</nav>
 	)
 }
 
-const NavbarStyled = styled.nav`
-	grid-area: n;
-
-	background-color: #8e8e90;
-`
-const LinkNav = styled.a`
-	display: block;
-`
