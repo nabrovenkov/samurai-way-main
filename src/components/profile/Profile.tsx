@@ -1,4 +1,5 @@
 import s from './Profile.module.css'
+import { MyPosts } from './my_posts/MyPosts';
 
 export function Profile() {
 	return (
@@ -10,14 +11,7 @@ export function Profile() {
 				/>
 			</div>
 			<div>ava + description</div>
-			<div>
-				My Posts
-				<div>New Posts</div>
-				<div className='posts'>
-					<div className='item'>Post 1</div>
-					<div className='item'>Post 2</div>
-				</div>
-			</div>
+			<MyPosts/>
 		</div>
-	)
-}
+	);
+};
