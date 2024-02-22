@@ -1,8 +1,7 @@
-import s from './style/Profile.module.css'
+import s from './Profile.module.css'
 
-
-export function Profile () {
-  return (
+export function Profile() {
+	return (
 		<div className={s.content}>
 			<div>
 				<img
@@ -22,4 +21,3 @@ export function Profile () {
 		</div>
 	)
 }
-
