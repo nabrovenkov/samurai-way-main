@@ -1,7 +1,17 @@
 .nav {
 	grid-area: n;
 	background-color: #555555;
+	padding: 20px;
 }
 .item {
 	display: block;
+
+	& > a {
+		color: white;
+		text-decoration: none;
+	}
+
+	& > a.act {
+		color: gold;
+	}
 }
