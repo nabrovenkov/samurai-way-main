@@ -14,17 +14,22 @@ export type PostType = {
 	like: number;
 };
 
+export type ProfilePageType = {
+	posts: Array<PostType>
+} 
+
+export type MessagePageType = {
+	dialogs: Array<DialogType>
+	messages: Array<MessageType>
+
+}
+
 export type StateType = {
-	profilePage: {
-		posts: Array<PostType>;
-	};
-	messagePage: {
-		dialogs: Array<DialogType>;
-		messages: Array<MessageType>;
-	};
+	profilePage: ProfilePageType
+	messagePage: MessagePageType
 };
 
-export const state: StateType = {
+export const state = {
 	profilePage: {
 		posts: [
 			{ id: 1, message: 'Hi, how are you?', like: 8 },

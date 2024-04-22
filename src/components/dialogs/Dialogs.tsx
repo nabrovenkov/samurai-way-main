@@ -1,14 +1,13 @@
-import { DialogType, MessageType } from '../..';
 import style from './Dialogs.module.css';
 import { DialogItem } from './dialogs_item/DialogItem';
 import { Message } from './messages/Message';
 
-export const Dialogs = ({dialogs, messages}: {dialogs: Array<DialogType>, messages: MessageType[]}) => {
+export const Dialogs = ({state}: any) => {
 
-	const dialogsElements = dialogs.map((d) => (
+	const dialogsElements = state.dialogs.map((d) => (
 		<DialogItem id={d.id} name={d.name} />
 	)); 
-	const messagesElements = messages.map((m) => <Message message={m.message} />);
+	const messagesElements = state.messages.map((m) => <Message message={m.message} />);
 	return (
 		<div className={style.dialogs}>
 			<div className={style.dialogsItems}>{dialogsElements}</div>
