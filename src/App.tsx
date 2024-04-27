@@ -11,7 +11,6 @@ import { Setting } from './components/setting/Setting';
 import { StateType } from './redux/state';
 
 function App({state}: any) {
-
 	return (
 		<BrowserRouter>
 			<div className='app-wrapper'>
@@ -20,7 +19,7 @@ function App({state}: any) {
 				<div className='app-wrapper-content'>
 					<Routes>
 						<Route path='/profile' element={<Profile state={state.profilePage} />}/>
-						<Route path='/dialogs' element={<Dialogs />}/>
+						<Route path='/dialogs' element={<Dialogs state={state.messagePage}/>}/>
 						<Route path='/news' element={<News />} />
 						<Route path='/music' element={<Music />} />
 						<Route path='/setting' element={<Setting />} />
